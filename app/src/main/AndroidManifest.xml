@@ -16,6 +16,7 @@
         android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.NFC" />
 
 
     <!-- Requiere cámara obligatoriamente -->
@@ -47,7 +48,31 @@
 
 
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".mapas.MapaCompradorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mapas.MapaVendedorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compra.CalificarActivityVendedor"
+            android:exported="false" />
+        <activity
+            android:name=".compra.NFCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".producto.DetalleProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".producto.CrearProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ingresar.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ingresar.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Ingresar.MainActivity"
             android:exported="true">
 
             <intent-filter>
@@ -82,4 +107,5 @@
         <activity android:name=".ui.mapas.MapaDireccionActivity" android:exported="false" />
 
     </application>
+
 </manifest>
